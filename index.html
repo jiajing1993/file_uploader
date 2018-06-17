@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>File Uploader</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <div class="alert_dialog"></div>
+      <label for="image" class="input-label">PNG Image</label>
+      <input type="file" name="image" id="image" class="input-field" onChange='handleChange(this)'>
+      <div class="icon-svg-preview"></div>
+    </form>
+  </div>
+  <script src="file_uploader/uploader.js"></script>
+  <script src="script.js"></script>
+  <script>
+
+    var handleChange = function(input){
+      var a = new SVGUploader({
+        input: input,
+        target_input_id: "",
+      })
+      console.log(a)
+
+      a.validateFile();
+    }
+  </script>
+</body>
+</html>

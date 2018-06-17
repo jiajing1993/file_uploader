@@ -1,0 +1,44 @@
+html, body {
+  padding: 0;
+  margin : 0;
+  height: 100%;
+  width: 100%;
+}
+
+div, input {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #00cec9;
+  padding: 100px 0px;
+}
+
+form {
+  background-color: white;
+  border-radius: 5px;
+  margin: 0px auto;
+  max-width: 500px;
+  padding: 20px;
+  width: 80%;
+}
+
+label.input-label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+input.input-field {
+  border: 1px solid #636e72;
+  border-radius: 4px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+.alert_dialog {
+  background-color: tomato;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
